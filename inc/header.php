@@ -8,7 +8,7 @@ Session::checkSession();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Better Ask</title>
     <link rel="stylesheet" href="inc/bootstrap.min.css">
     <link rel="stylesheet" href="css/crud.css">
     <script src="inc/jquery.min.js"></script>
