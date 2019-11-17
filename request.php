@@ -13,7 +13,7 @@ if(!isset($_GET['reqpostid'])||$_GET['reqpostid']==NULL){
   $db=new Database();
   $query="SELECT * FROM tb_ans1 where id=$id";
   $view=$db->select($query)->fetch_assoc();
-  if(isset($_POST['submit'])){
+  if(isset($_POST['accept'])){
             $upquery="UPDATE tb_ans1
             SET
             status=1
@@ -55,7 +55,9 @@ if(!isset($_GET['reqpostid'])||$_GET['reqpostid']==NULL){
                             <td><?php echo $view['answer'];?> </td>
                             <td><?php echo $view['writer'];?> </td>
                                 <td>
-                                      <button type="submit" name="submit" class="btn btn-success">Accept</button>
+                                      <button type="submit" name="accept" class="btn btn-success">Accept</button>
+                                    <td>
+                                      <button type="submit" name="delete" class="btn btn-success">Reject</button>
                                 </td>
                         </tr>
                 </table>
